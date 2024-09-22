@@ -1,7 +1,7 @@
 package models
 
 type Questions struct {
-	QuestionNumber int    `json:"question_number"`
-	Question       string `json:"question"`
-	Answer         string `json:"answer"`
+	QuestionNumber int    `db:"question_number" json:"question_number"`
+	Question       string `db:"question" json:"question"`
+	Answer         string `db:"answer" json:"answer"`
 }

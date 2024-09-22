@@ -49,9 +49,9 @@ func Connect() {
 
 func runMigrations(db *sqlx.DB) {
 	_, err := db.Exec(`
-		CREATE TABLE test (test VARCHAR(255));
+		CREATE TABLE IF NOT EXISTS test (test VARCHAR(255));
 
-		CREATE TABLE questions (
+		CREATE TABLE IF NOT EXISTS questions (
 			question_number INTEGER PRIMARY KEY,
 			question VARCHAR(255),
 			answer VARCHAR(255)	

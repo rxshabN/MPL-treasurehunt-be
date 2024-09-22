@@ -21,7 +21,7 @@ func main() {
 		})
 	})
 
-	app.Post("/check-answer", controllers.CheckAnswer)
-
-	log.Fatal(app.Listen(":3000"))
+	app.Post("/checkAnswer", controllers.CheckAnswer)
+	app.Post("/createQuestion", controllers.CreateQuestion)
+	log.Fatal(app.Listen(":8080"))
 }
