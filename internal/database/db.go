@@ -50,7 +50,12 @@ func Connect() {
 func runMigrations(db *sqlx.DB) {
 	_, err := db.Exec(`
 		CREATE TABLE test (test VARCHAR(255));
-		
+
+		CREATE TABLE questions (
+			question_number INTEGER PRIMARY KEY,
+			question VARCHAR(255),
+			answer VARCHAR(255)	
+		)
 	`)
 
 	if err != nil {
