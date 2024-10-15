@@ -14,6 +14,7 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
+
 ## Table of Contents
 
 - [About The Project](#about-the-project)
@@ -25,9 +26,10 @@
 - [License](#license)
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
-This is the backend API for the Math Premier League (MPL), SIAM-VIT's Flagship Event in VIT's fest, GraVITas 
+This is the backend API for the Math Premier League (MPL), SIAM-VIT's Flagship Event in VIT's fest, GraVITas. This API is used to manage the check of the answer entered by the user in the clues. The API is built using Go Lang Fiber.
 
 ### Built With
 
@@ -38,6 +40,7 @@ This project is built using the following technologies and frameworks:
 - [Redis](https://redis.io/docs/latest/)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps.
@@ -53,18 +56,28 @@ Make sure you have the following installed:
 ### Installation
 
 1. Clone the repo
+
    ```sh
    git clone https://github.com/SIAM-VIT/MPL-be.git
 
+   ```
+
 2. Change into the project directory
+
    ```sh
    cd MPL-be
 
+   ```
+
 3. Install dependencies
+
    ```sh
    go mod download
 
+   ```
+
 4. Set up PostgreSQL and configure .env with your database credentials:
+
    ```sh
     # Postgres Configuration
     DB_HOST=abc
@@ -73,9 +86,12 @@ Make sure you have the following installed:
     DB_PASSWORD=abc
     DB_NAME=abc
 
-6. Start the application
+   ```
+
+5. Start the application
    ```sh
    go run cmd/main.go
+   ```
 
 ## Contributors
 
@@ -95,11 +111,11 @@ Make sure you have the following installed:
 	</tr>
 </table>
 
-
 <!-- LICENSE -->
-## License
-Distributed under the MIT License. See LICENSE for more information.
 
+## License
+
+Distributed under the MIT License. See LICENSE for more information.
 
 <p align="center">
 	Made with :heart: by SIAM-VIT
